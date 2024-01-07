@@ -1,0 +1,52 @@
+{
+    "students" : [
+        {
+            "name" : "John",
+            "age" : 30,
+            "city" : "New York",
+            "skills" : ["HTML", "CSS", "JavaScript"],
+            "address" : {
+                "street" : "North 1st street",
+                "zipcode" : "12345"
+            },
+            "married" : true,
+            "superpowers" : null
+        },
+        {
+            "name" : "Peter",
+            "age" : 40,
+            "city" : "Paris",
+            "skills" : ["HTML", "CSS", "JavaScript"],
+            "address" : {
+                "street" : "North 1st street",
+                "zipcode" : "12345"
+            },
+            "married" : true,
+            "superpowers" : null
+        },
+        {
+            "name" : "Mark",
+            "age" : 25,
+            "city" : "London",
+            "skills" : ["HTML", "CSS", "JavaScript"],
+            "address" : {
+                "street" : "North 1st street",
+                "zipcode" : "12345"
+            },
+            "married" : true,
+            "superpowers" : null
+        },
+        {
+            "name" : "James",
+            "age" : 35,
+            "city" : "Chicago",
+            "skills" : ["HTML", "CSS", "JavaScript"],
+            "address" : {
+                "street" : "North 1st street",
+                "zipcode" : "12345"
+            },
+            "married" : true,
+            "superpowers" : null
+        }
+    ]
+}
