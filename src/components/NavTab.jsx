@@ -2,7 +2,7 @@ import { useState } from "react";
 import StudentList from "./StudentList";
 import ClassInfo from "./ClassInfo";
 
-const NavTab = () => {
+const NavTab = ({ students }) => {
   const [activeTab, setActiveTab] = useState(0);
 
   const handleTabClick = (tabIndex) => {
@@ -39,7 +39,7 @@ const NavTab = () => {
       </ul>
       <div className="tab-content px-20 overflow-y-scroll">
         {activeTab === 0 && <ClassInfo />}
-        {activeTab === 1 && <StudentList />}
+        {activeTab === 1 && <StudentList students={students} />}
         {activeTab === 2 && <div>Class Schedule</div>}
       </div>
     </div>
