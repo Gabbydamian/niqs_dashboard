@@ -1,0 +1,11 @@
+[build]
+  command = "npm run build"  # Replace with your build script
+  publish = "dist"  # Replace with the actual output directory of your build process
+
+[[redirects]]
+  from = "/.netlify/functions/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
+
+[functions]
+  directory = "netlify/functions"  # Replace with the actual path to your functions folder

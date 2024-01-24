@@ -1,6 +1,7 @@
 import { useState } from "react";
 import StudentList from "./StudentList";
 import ClassInfo from "./ClassInfo";
+import PropTypes from "prop-types";
 
 const NavTab = ({ students }) => {
   const [activeTab, setActiveTab] = useState(0);
@@ -44,6 +45,10 @@ const NavTab = ({ students }) => {
       </div>
     </div>
   );
+};
+
+NavTab.propTypes = {
+  students: PropTypes.array,
 };
 
 export default NavTab;
