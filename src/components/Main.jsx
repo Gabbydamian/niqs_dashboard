@@ -1,8 +1,7 @@
 import NavTab from "./NavTab";
+import PropTypes from "prop-types";
 
-const Main = ({students}) => {
-
-
+const Main = ({ students }) => {
   return (
     <main className="container-xl relative px-[6rem] py-[3rem] mx-auto">
       <div
@@ -10,8 +9,7 @@ const Main = ({students}) => {
         className="mt-8 flex items-center justify-start gap-[3rem]"
       >
         <div className="logo">
-          <div className="bg-blue-500 w-[10rem] h-[10rem] rounded-full flex items-center justify-center">
-            {/* <h1 className="text-5xl font-bold">IM</h1> */}
+          <div className="w-[10rem] h-[10rem] rounded-full flex items-center justify-center">
             <img
               className="w-full h-full rounded-full"
               src="https://th.bing.com/th/id/OIP.T66DwA3Uysr-kv1WRydS3AHaE7?rs=1&pid=ImgDetMain"
@@ -39,6 +37,10 @@ const Main = ({students}) => {
       </div>
     </main>
   );
+};
+
+Main.propTypes = {
+  students: PropTypes.array.isRequired,
 };
 
 export default Main;

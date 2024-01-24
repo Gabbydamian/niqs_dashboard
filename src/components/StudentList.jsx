@@ -1,11 +1,12 @@
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
 const StudentList = ({ students }) => {
   return (
     <div className="flex flex-wrap justify-center items-center">
       {students.map((student) => (
-        <a
-          href="#"
+        <Link
+          to={`/student/${student.id}`}
           key={student.id}
           className="w-1/5 h-64 p-4 shadow-sm m-2 hover:shadow-md hover:bg-gray-100 transition-all rounded-md bg-gray-50"
         >
@@ -18,7 +19,7 @@ const StudentList = ({ students }) => {
             <p className="font-bold text-center">{student.name}</p>
             <p className="text-center">{student.reg}</p>
           </div>
-        </a>
+        </Link>
       ))}
     </div>
   );

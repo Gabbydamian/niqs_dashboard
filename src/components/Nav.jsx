@@ -3,7 +3,7 @@ import { IoSearch } from "react-icons/io5";
 const nav = () => {
   return (
     <nav className="flex justify-between items-center px-[6rem] py-[20px] shadow-md h-[75px]">
-      <a href="./index.html">
+      <a href="/">
         <h1 className="font-bold text-xl">Imperial Quantifiers</h1>
       </a>
       <div id="nav-util" className="flex items-center gap-x-10">
