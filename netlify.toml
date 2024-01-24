@@ -3,7 +3,7 @@
   publish = "dist"  # Replace with the actual output directory of your build process
 
 [[redirects]]
-  from = "/.netlify/functions/*"
+  from = "/functions/*"
   to = "/.netlify/functions/:splat"
   status = 200
 
