@@ -10,7 +10,9 @@ function App() {
 
   useEffect(() => {
     (async () => {
-      const f = await fetch("../src/data/student_list.json");
+      const f = await fetch(
+        "https://imp-dashboard.netlify.app/.netlify/functions/getStudents"
+      );
       const data = await f.json();
       setStudents(data);
     })();
