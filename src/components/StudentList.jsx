@@ -2,6 +2,12 @@ import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
 const StudentList = ({ students }) => {
+  // const getRandomImage = (gender) => {
+  //   const randomNum = Math.floor(Math.random() * 100) + 1;
+  //   const genderPrefix = gender === "male" ? "men" : "women";
+  //   return `https://randomuser.me/api/portraits/${genderPrefix}/${randomNum}.jpg`;
+  // };
+
   return (
     <div className="flex flex-wrap justify-center items-center">
       {students.map((student) => (
@@ -12,7 +18,8 @@ const StudentList = ({ students }) => {
         >
           <img
             className="w-32 h-32 rounded-full mx-auto mb-6"
-            src="https://th.bing.com/th/id/OIP.GnZca7JlXZTkV2mQWgUkFQHaHa?rs=1&pid=ImgDetMain"
+            // src={getRandomImage(student.gender)}
+            src="https://randomuser.me/api/portraits/men/1.jpg"
             alt="#"
           />
           <div id="student-info">

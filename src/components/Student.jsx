@@ -17,7 +17,7 @@ const Student = ({ students }) => {
             {/* <h1 className="text-5xl font-bold">IM</h1> */}
             <img
               className="w-full h-full rounded-full"
-              src="https://th.bing.com/th/id/OIP.GnZca7JlXZTkV2mQWgUkFQHaHa?rs=1&pid=ImgDetMain"
+              src="https://randomuser.me/api/portraits/men/1.jpg"
               alt="class"
             />
           </div>
@@ -29,11 +29,11 @@ const Student = ({ students }) => {
           </div>
           <div className="population flex">
             <h2 className="text-lg font-bold">Nickname:</h2>
-            <p className="text-xl ml-2">{'empty_string'}</p>
+            <p className="text-xl ml-2">{"empty_string"}</p>
           </div>
           <div className="level flex">
             <h2 className="text-lg font-bold">D.O.B:</h2>
-            <p className="text-xl ml-2">{'empty_string'}</p>
+            <p className="text-xl ml-2">{"empty_string"}</p>
           </div>
         </div>
       </div>
