@@ -8,6 +8,8 @@ const StudentList = ({ students }) => {
   //   return `https://randomuser.me/api/portraits/${genderPrefix}/${randomNum}.jpg`;
   // };
 
+  
+
   return (
     <div className="flex flex-wrap justify-center items-center">
       {students.map((student) => (

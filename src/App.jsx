@@ -10,10 +10,14 @@ function App() {
 
   useEffect(() => {
     (async () => {
+<<<<<<< HEAD
       //TODO: fix the url in development
       const f = await fetch(
         "/data/student_list.json"
       );
+=======
+      const f = await fetch("/data/student_list.json");
+>>>>>>> dev
       const data = await f.json();
       setStudents(data);
     })();
