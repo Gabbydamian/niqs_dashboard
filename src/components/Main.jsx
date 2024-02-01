@@ -1,7 +1,18 @@
 import NavTab from "./NavTab";
 import PropTypes from "prop-types";
+import ClassInfo from "./ClassInfo";
+import StudentList from "./StudentList";
 
 const Main = ({ students }) => {
+  const tabpages = [
+    { id: 0, page: "Gen. Information", content: <ClassInfo /> },
+    {
+      id: 1,
+      page: "Student List",
+      content: <StudentList students={students} />,
+    },
+    { id: 2, page: "Schedule", content: <div>Class Schedule</div> },
+  ];
   return (
     <main className="container-xl relative px-[6rem] py-[3rem] mx-auto">
       <div
@@ -24,7 +35,7 @@ const Main = ({ students }) => {
           </div>
           <div className="population flex">
             <h2 className="text-lg font-bold">Population:</h2>
-            <p className="text-xl ml-2">121</p>
+            <p className="text-xl ml-2">{students.length}</p>
           </div>
           <div className="level flex">
             <h2 className="text-lg font-bold">Level of Study:</h2>
@@ -33,7 +44,7 @@ const Main = ({ students }) => {
         </div>
       </div>
       <div id="tabs" className="absolute inset-0 mt-[16rem] w-full h-12">
-        <NavTab students={students} />
+        <NavTab students={students} tabpages={tabpages} />
       </div>
     </main>
   );

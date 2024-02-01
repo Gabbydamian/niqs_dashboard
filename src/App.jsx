@@ -10,7 +10,7 @@ function App() {
 
   useEffect(() => {
     (async () => {
-      const f = await fetch("../public/data/student_list.json");
+      const f = await fetch("/data/student_list.json");
       const data = await f.json();
       setStudents(data);
     })();
