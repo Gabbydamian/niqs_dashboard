@@ -1,0 +1,55 @@
+.logo a h1 {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    background: linear-gradient(to right, #3b82f6, #3b82f6 50%, #213547 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+}
+
+.logo a h1 {
+    transition: background-position 275ms ease;
+}
+
+.logo a h1:hover {
+    background-position: 0 100%;
+}
+
+
+li:hover,
+#nav-util>a:hover span {
+    animation: slide-in-top 0.4s ease;
+    color: #3b82f6;
+}
+
+#nav-util>a:hover .icon {
+    color: #3b82f6;
+    transition: 0.4s ease;
+
+}
+
+
+@keyframes slide-in-top {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    25% {
+        transform: translateY(-5px);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateY(5px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

@@ -1,6 +1,5 @@
 import Nav from "./components/Nav";
-import Main from "./components/Main";
-import Student from "./components/Student";
+import Main from "./components/Home";
 import "./App.css";
 import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
@@ -21,7 +20,7 @@ function App() {
       <Nav />
       <Routes>
         <Route path="/" element={<Main students={students} />} />
-        <Route path="/student/:id" element={<Student students={students} />} />
+        {/* <Route path="/student/:id" element={<Student students={students} />} /> */}
       </Routes>
     </Router>
   );
