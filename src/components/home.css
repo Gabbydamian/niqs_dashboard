@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+}
+
+
+
+/* Set the width of all images to 100% and maintain a 1:1 aspect ratio */
+img {
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+
+
+
+/* Create a wrapper container with a relative position */
+.wrapper {
+    position: relative;
+}
+
+/* Add a background image to the wrapper container */
+.wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../assets/bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(75%);
+}
+
+/* Set the position of the main content and increase its z-index */
+.main-content {
+    position: relative;
+    z-index: 1;
+}
+
+/* Style the heading with a gradient background */
+.main-content h1 {
+    background: linear-gradient(292deg, #ffffff, #ffffff);
+    background-size: 800% 800%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: default;
+    width: fit-content;
+}
+
+/* Add a hover effect to the heading */
+.main-content h1:hover {
+    background: linear-gradient(292deg, #3b82f6, #3bf6f4, #fff, #ff97e5, #3bf6f4, #aaff79, #fff);
+    background-size: 800% 800%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: AnimationName 4s ease infinite;
+}
+
+/* Define the keyframes for the heading animation */
+@keyframes AnimationName {
+    0% {
+        background-position: 28% 0%;
+    }
+
+    50% {
+        background-position: 73% 100%;
+    }
+
+    100% {
+        background-position: 28% 0%;
+    }
+}
+
+/* Style the button with a z-index and transition effect */
+button {
+    z-index: 1;
+    color: #e8e8e8 !important;
+    position: relative;
+    transition: all 250ms ease;
+    overflow: hidden;
+}
+
+/* Add a background element to the button */
+button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: #48c792;
+    z-index: -1;
+    transition: all 250ms ease;
+}
+
+/* Add a different background color to the last button */
+button:last-child::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    /* background-color: rgb(37 99 235) !important; */
+    z-index: -1;
+    transition: all 250ms ease;
+}
+
+/* Remove the outline on hover for the last button */
+button:last-child:hover {
+    outline: none;
+}
+
+/* Add a hover effect to the button background */
+button:hover::before {
+    width: 100%;
+}
